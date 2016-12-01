@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>lending library</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+<h1> Central Library</h1>
+<div class="grid_1">
+  
+    <h2>Register New User </h2>
+    <label for="neUser">User Name</label><br>
+    <input id="newUser" type="text"><br>
+    <label for="newEmail"> Email ID</Label><br>
+    <input id="newEmail" type="email"><br>
+    
+    <button type="button" onclick="neUser()">add</button> <br>
+
+  </div>
+
+
+    <div class="grid_1">
+  
+    <h2>books currently in the library</h2>
+    <button type="button" onclick="showAllBooks()">show books</button>
+    <ol id="allTheBooks">
+
+    </ol>
+  </div>
+  <div class="grid_1">
+    <h1>Library's Search Area</h1>
+    <p>search by book's title</p>
+    <input id="bookname" value=""><br>
+    <button type="button" onclick="boonam()">Go</button>
+    <p id='result'></p>
+</div>
+<div class="grid_1">
+    <h2>If you want to add a book to the library ,<br>than fill this below form and click on Add</h2>
+    <p>Add title of the book </p>
+     <input id="adtitle">
+     <p>Add author of the book </p>
+   <input id="adauthor">
+   <p>Add year of the book </p>
+   <input id="adyear"> <br>
+   <button type="button" onclick="addBook()">add</button> <br>
+
+</div>
+
+	
+	
+	
+  </main>
+  
+  <script src="app.js"></script>
+</body>
+</html>
